@@ -10,9 +10,10 @@ public class DatabaseManager : MonoBehaviour
 {
     [SerializeField] private LastShotInfo shotInfo;
     [SerializeField] private TMP_InputField index;
-    [SerializeField] private string databaseURL;
+    [SerializeField] private string databaseURL = "https://tpbalistico-default-rtdb.firebaseio.com/";
 
     private ShotInfoToDisplay shotToRead = new();
+
 
     private void LogMessage(string title, string message)
     {
